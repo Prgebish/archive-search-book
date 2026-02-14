@@ -6,21 +6,27 @@ No API keys required — uses the public Archive.org Advanced Search API.
 
 ## Install
 
-Copy `SKILL.md` into your agent's skills directory (e.g. for Claude Code):
+Clone the repo (or copy `SKILL.md`) into your agent's skills directory:
 
-```bash
-mkdir -p ~/.claude/skills/search-book
-curl -o ~/.claude/skills/search-book/SKILL.md \
-  https://raw.githubusercontent.com/Prgebish/archive-search-book/main/SKILL.md
-```
-
-Or clone the repo:
+### Claude Code
 
 ```bash
 git clone https://github.com/Prgebish/archive-search-book ~/.claude/skills/search-book
 ```
 
-After that, the `/search-book` command will be available in your AI coding agent.
+### Codex CLI
+
+```bash
+git clone https://github.com/Prgebish/archive-search-book ~/.codex/skills/search-book
+```
+
+### Gemini CLI
+
+```bash
+git clone https://github.com/Prgebish/archive-search-book ~/.gemini/skills/search-book
+```
+
+After that, the `/search-book` command will be available in your agent.
 
 ## Usage
 
